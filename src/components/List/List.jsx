@@ -30,10 +30,11 @@ const List = () =>{
         <>
             <section className='list'>
                 <header>
-                    <h2>Tarefas a fazer:</h2>
+                    <h2>📋 Tarefas a fazer:</h2>
                         <div className='input-container'>
                             <input 
                                     type='text'
+                                    className="input-task"
                                     placeholder='Adicionar nova tarefa'
                                     onChange={(e) => {setNewTask(e.target.value)}}
                                     value={newTask}

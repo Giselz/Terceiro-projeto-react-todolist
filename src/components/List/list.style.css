@@ -17,12 +17,14 @@ header h2 {
     font-size: 2.25rem;
 }
 
-.input-container {
+.input-task{
     display: flex;
     gap: 0.25rem;
     align-items: center;
     background: #fff;
     font-size: 16px;    
+    border: none;
+    box-shadow: 2px 4px 10px #57657470;
 }
 
 input {
@@ -31,13 +33,18 @@ input {
     border: 0.5 solid #60C3D8;
     padding: 12px 24px;
     border-radius: 8px;
+    border: none;
+}
+
+input:hover{
+    border: solid 1px #8338ec;
+    border-right: none;
 }
 
 button {
     font-weight: 600;
     border-radius: 8px;
     border: 0;
-    
     color: #fff;
     display: flex;
     flex-direction: row;
@@ -46,11 +53,21 @@ button {
 } 
 
 .add-task {
-    background: #60C3D8;
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+    background: #a74dd7;
+    cursor: pointer;
+}
+
+.add-task:hover{
+    background-color: #7d0ee4;
+    transition: linear .5s;
 }
 
 .remove-task {
     background:rgb(230, 79, 79);
+    cursor: pointer;
 }
 
 main {
