@@ -17,6 +17,10 @@ header h2 {
     font-size: 2.25rem;
 }
 
+.input-container {
+    display: flex;
+}
+
 .input-task{
     display: flex;
     gap: 0.25rem;
@@ -53,6 +57,7 @@ button {
 } 
 
 .add-task {
+    margin-left: 10px;
     display: flex;
     gap: 0.25rem;
     align-items: center;
@@ -68,6 +73,11 @@ button {
 .remove-task {
     background:rgb(230, 79, 79);
     cursor: pointer;
+}
+
+.remove-task:hover{
+    background:rgb(226, 34, 34);
+    transition: linear .5s;
 }
 
 .input-checkbox{
